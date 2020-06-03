@@ -8,18 +8,18 @@ export default function Video() {
       <div>
          <ul>
             <li>
-               <Link to={`/video/animate`} >Animation</Link>
+               <Link to="/video/animation" >Animation</Link>
             </li>
             <li>
-               <Link to={`/video/movie`}>Movie</Link>
+               <Link to="/video/movie">Movie</Link>
             </li>
          </ul>
          <Switch>
             <Route exact path="/video">
                <h2>Please Select A Topic</h2>
             </Route>
-            <Route path={'/video/animate'} component={Animation} />
-            <Route path={'/video/movie'} component={Movie} />
+            <Route path="/video/animation" component={Animation} />
+            <Route path="/video/movie" component={Movie} />
          </Switch>
 
       </div>

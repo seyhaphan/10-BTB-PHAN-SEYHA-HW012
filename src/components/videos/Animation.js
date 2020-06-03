@@ -16,9 +16,9 @@ export default function Animation({ match }) {
             })}
          </ul>
 
-         <Route exact path={'/video/animate'} render={() => <h4>Please Select A Topic</h4>} />
+         <Route exact path={'/video/animation'} render={() => <h4>Please Select A Topic</h4>} />
 
-         <Route path={'/video/animate/:aid'} render={({ match }) => <h3>{match.params.aid}</h3>} />
+         <Route path={'/video/animation/:aid'} render={({ match }) => <h3>{match.params.aid}</h3>} />
       </div>
    )
 }
