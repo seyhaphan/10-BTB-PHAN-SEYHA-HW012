@@ -8,7 +8,7 @@ export default class Login extends Component {
    }
    onSubmit = (e) => {
       e.preventDefault();
-      fakeAuth.authenticate(() => {
+      Auth.authenticate(() => {
          this.setState({
             redirectToReferrer: true
          })
@@ -41,7 +41,7 @@ export default class Login extends Component {
    }
 }
 
-export const fakeAuth = {
+export const Auth = {
    isAuthenticated: false,
    authenticate(cb) {
       this.isAuthenticated = true
